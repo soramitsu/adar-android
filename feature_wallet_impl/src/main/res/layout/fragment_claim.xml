@@ -25,9 +25,9 @@
 
             <ImageView
                 android:id="@+id/logo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_sora_logo_big"
+                android:layout_width="168dp"
+                android:layout_height="168dp"
+                android:src="@drawable/ic_adar_text"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -39,7 +39,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/x2"
                 android:gravity="center"
-                android:text="@string/claim_welcome_sora2_v1"
+                android:text="Welcome to\nADAR"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/logo" />

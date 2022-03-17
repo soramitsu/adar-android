@@ -7,16 +7,15 @@
     android:layout_height="match_parent"
     android:background="@color/neu_color_100">
 
-    <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/animation_view"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:scaleType="centerCrop"
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="168dp"
+        android:layout_height="168dp"
+        android:src="@drawable/ic_adar_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:lottie_autoPlay="true"
-        app:lottie_rawRes="@raw/splash_animation" />
+        tools:ignore="ContentDescription" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
