@@ -73,8 +73,6 @@ class ClaimFragment : BaseFragment<ClaimViewModel>(R.layout.fragment_claim) {
             )
         }
         viewModel.buttonPendingStatusLiveData.observe {
-            viewBinding.claimSubtitle.text = if (it) getString(R.string.claim_subtitle_confirmed_2) else getString(R.string.claim_subtitle)
-            viewBinding.claimSubtitle.gravity = if (it) Gravity.CENTER_HORIZONTAL else Gravity.NO_GRAVITY
             viewBinding.claimSubtitle1.showOrHide(it)
             viewBinding.nextBtn.showOrHide(!it)
             viewBinding.loadingLayout.showOrHide(it)

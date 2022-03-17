@@ -38,9 +38,9 @@ class ProfileFragment : BaseFragment<ProfileViewModel>(R.layout.fragment_profile
 
         (activity as BottomBarController).showBottomBar()
 
-        binding.profileFriendsTextView.setDebouncedClickListener(debounceClickHandler) {
-            viewModel.profileFriendsClicked()
-        }
+//        binding.profileFriendsTextView.setDebouncedClickListener(debounceClickHandler) {
+//            viewModel.profileFriendsClicked()
+//        }
 
         binding.profilePinTextView.setDebouncedClickListener(debounceClickHandler) {
             viewModel.profileChangePin()
@@ -54,9 +54,9 @@ class ProfileFragment : BaseFragment<ProfileViewModel>(R.layout.fragment_profile
             viewModel.onPassphraseClick()
         }
 
-        binding.profileFaqTextView.setDebouncedClickListener(debounceClickHandler) {
-            viewModel.btnHelpClicked()
-        }
+//        binding.profileFaqTextView.setDebouncedClickListener(debounceClickHandler) {
+//            viewModel.btnHelpClicked()
+//        }
 
         binding.profileLogoutTextView.setDebouncedClickListener(debounceClickHandler) {
             viewModel.logoutClicked()
@@ -66,13 +66,13 @@ class ProfileFragment : BaseFragment<ProfileViewModel>(R.layout.fragment_profile
             viewModel.biometryIsChecked(isChecked)
         }
 
-        binding.profileAboutTextView.setDebouncedClickListener(debounceClickHandler) {
-            viewModel.profileAboutClicked()
-        }
+//        binding.profileAboutTextView.setDebouncedClickListener(debounceClickHandler) {
+//            viewModel.profileAboutClicked()
+//        }
 
-        binding.profileDisclaimerTextView.setDebouncedClickListener(debounceClickHandler) {
-            viewModel.disclaimerInSettingsClicked()
-        }
+//        binding.profileDisclaimerTextView.setDebouncedClickListener(debounceClickHandler) {
+//            viewModel.disclaimerInSettingsClicked()
+//        }
 
         binding.profileLanguageTextView.setDebouncedClickListener(debounceClickHandler) {
             viewModel.profileLanguageClicked()
