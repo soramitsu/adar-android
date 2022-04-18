@@ -1,12 +1,10 @@
 /**
-* Copyright Soramitsu Co., Ltd. All Rights Reserved.
-* SPDX-License-Identifier: GPL-3.0
-*/
+ * Copyright Soramitsu Co., Ltd. All Rights Reserved.
+ * SPDX-License-Identifier: GPL-3.0
+ */
 
 package jp.co.soramitsu.sora.splash.presentation
 
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
 import jp.co.soramitsu.common.data.network.substrate.runtime.RuntimeManager
 import jp.co.soramitsu.common.presentation.viewmodel.BaseViewModel
@@ -21,14 +19,10 @@ class SplashViewModel(
     private val runtimeManager: RuntimeManager,
 ) : BaseViewModel() {
 
-    private val _runtimeInitiated = MutableLiveData<Boolean>()
-    val runtimeInitiated: LiveData<Boolean> = _runtimeInitiated
-
     init {
         viewModelScope.launch {
             tryCatch {
                 runtimeManager.start()
-                _runtimeInitiated.value = true
             }
         }
     }

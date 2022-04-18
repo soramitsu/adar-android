@@ -10,13 +10,14 @@ android {
     compileSdkVersion compileVersion
     flavorDimensions "default"
     defaultConfig {
-        applicationId "jp.co.soramitsu.sora"
+        applicationId "jp.co.soramitsu.adar"
         minSdkVersion minVersion
         targetSdkVersion targetVersion
         versionCode appVersionCode
         versionName appVersionName
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
+        signingConfig signingConfigs.debug
     }
     signingConfigs {
         cidebug {
@@ -84,11 +85,20 @@ android {
     productFlavors {
         develop {
             applicationIdSuffix ".develop"
-            resValue "string", "app_name", "Sora Develop"
+            resValue "string", "app_name", "Adar Develop"
             dimension 'default'
             manifestPlaceholders.pathPrefix = "/dev/join"
-            manifestPlaceholders.appIcon = "@mipmap/ic_dev_launcher"
-            manifestPlaceholders.roundedIcon = "@mipmap/ic_dev_launcher"
+            manifestPlaceholders.appIcon = "@mipmap/ic_adar_launcher"
+            manifestPlaceholders.roundedIcon = "@mipmap/ic_adar_launcher_round"
+        }
+
+        adartestnet {
+            applicationIdSuffix ".testnet"
+            resValue "string", "app_name", "ADAR testnet"
+            dimension 'default'
+            manifestPlaceholders.pathPrefix = "/dev/join"
+            manifestPlaceholders.appIcon = "@mipmap/ic_adar_launcher"
+            manifestPlaceholders.roundedIcon = "@mipmap/ic_adar_launcher_round"
         }
 
         soralution {
@@ -102,7 +112,7 @@ android {
 
         tsting {
             applicationIdSuffix ".stage"
-            resValue "string", "app_name", "Sora Staging"
+            resValue "string", "app_name", "Adar Staging"
             dimension 'default'
             manifestPlaceholders.pathPrefix = "/stg/join"
             manifestPlaceholders.appIcon = "@mipmap/ic_launcher"
@@ -110,7 +120,7 @@ android {
         }
 
         production {
-            resValue "string", "app_name", "Sora"
+            resValue "string", "app_name", "Adar"
             dimension 'default'
             manifestPlaceholders.pathPrefix = "/join"
             manifestPlaceholders.appIcon = "@mipmap/ic_launcher"
@@ -120,7 +130,7 @@ android {
 
     applicationVariants.all { variant ->
         variant.outputs.all { output ->
-            outputFileName = new File("Sora_" + variant.versionName + "_" + variant.flavorName + "_" + buildType.name + ".apk")
+            outputFileName = new File("Adar_" + variant.versionName + "_" + variant.flavorName + "_" + buildType.name + ".apk")
         }
     }
 }

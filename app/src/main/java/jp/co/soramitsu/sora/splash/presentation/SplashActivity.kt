@@ -7,6 +7,7 @@ package jp.co.soramitsu.sora.splash.presentation
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.lifecycleScope
 import jp.co.soramitsu.common.di.api.FeatureUtils
 import jp.co.soramitsu.feature_account_api.domain.model.OnboardingState
 import jp.co.soramitsu.feature_main_api.di.MainFeatureApi
@@ -15,6 +16,7 @@ import jp.co.soramitsu.sora.databinding.ActivitySplashBinding
 import jp.co.soramitsu.sora.di.app_feature.AppFeatureComponent
 import jp.co.soramitsu.sora.splash.domain.SplashRouter
 import javax.inject.Inject
+import kotlinx.coroutines.delay
 
 class SplashActivity : AppCompatActivity(), SplashRouter {
 
@@ -23,41 +25,15 @@ class SplashActivity : AppCompatActivity(), SplashRouter {
 
     private lateinit var viewBinding: ActivitySplashBinding
 
-    private var isFirstPartFinished = false
-    private var isSecondPartStarted = false
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         inject()
         setContentView(ActivitySplashBinding.inflate(layoutInflater).also { viewBinding = it }.root)
 
-        viewBinding.animationView.addAnimatorUpdateListener {
-            val progress = it.animatedFraction
-
-            if (progress >= 0.8 && !isFirstPartFinished) {
-                isFirstPartFinished = true
-                viewBinding.animationView.pauseAnimation()
-            }
-
-            if (splashViewModel.runtimeInitiated.value == true && isFirstPartFinished && !isSecondPartStarted) {
-                isSecondPartStarted = true
-                viewBinding.animationView.resumeAnimation()
-            }
-
-            if (progress >= 0.89) {
-                splashViewModel.nextScreen()
-            }
+        lifecycleScope.launchWhenStarted {
+            delay(2000)
+            splashViewModel.nextScreen()
         }
-
-        splashViewModel.runtimeInitiated.observe(
-            this,
-            {
-                if (it && isFirstPartFinished && !isSecondPartStarted) {
-                    isSecondPartStarted = true
-                    viewBinding.animationView.resumeAnimation()
-                }
-            }
-        )
     }
 
     private fun inject() {

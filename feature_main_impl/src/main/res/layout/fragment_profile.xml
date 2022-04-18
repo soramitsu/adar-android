@@ -79,48 +79,48 @@
             app:layout_constraintStart_toStartOf="@id/glLeft"
             app:layout_constraintTop_toBottomOf="@id/ivProfileAccount" />
 
-        <ImageView
-            android:id="@+id/ivProfileFriends"
-            android:layout_width="@dimen/profile_icon"
-            android:layout_height="@dimen/profile_icon"
-            android:padding="@dimen/x1"
-            android:src="@drawable/ic_neu_heart"
-            app:layout_constraintStart_toStartOf="@id/glLeft"
-            app:layout_constraintTop_toBottomOf="@id/vProfileDiv1"
-            app:tint="?attr/tintColorLight"
-            tools:ignore="ContentDescription" />
+<!--        <ImageView-->
+<!--            android:id="@+id/ivProfileFriends"-->
+<!--            android:layout_width="@dimen/profile_icon"-->
+<!--            android:layout_height="@dimen/profile_icon"-->
+<!--            android:padding="@dimen/x1"-->
+<!--            android:src="@drawable/ic_neu_heart"-->
+<!--            app:layout_constraintStart_toStartOf="@id/glLeft"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/vProfileDiv1"-->
+<!--            app:tint="?attr/tintColorLight"-->
+<!--            tools:ignore="ContentDescription" />-->
 
-        <TextView
-            android:id="@+id/profileFriendsTextView"
-            style="@style/TextAppearance.Soramitsu.Neu.18.Regular"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:background="?selectableItemBackground"
-            android:padding="@dimen/x1"
-            android:text="@string/tabbar_friends_title"
-            app:layout_constraintBottom_toBottomOf="@id/ivProfileFriends"
-            app:layout_constraintEnd_toEndOf="@id/glRight"
-            app:layout_constraintStart_toEndOf="@id/ivProfileFriends"
-            app:layout_constraintTop_toTopOf="@id/ivProfileFriends" />
+<!--        <TextView-->
+<!--            android:id="@+id/profileFriendsTextView"-->
+<!--            style="@style/TextAppearance.Soramitsu.Neu.18.Regular"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="?selectableItemBackground"-->
+<!--            android:padding="@dimen/x1"-->
+<!--            android:text="@string/tabbar_friends_title"-->
+<!--            app:layout_constraintBottom_toBottomOf="@id/ivProfileFriends"-->
+<!--            app:layout_constraintEnd_toEndOf="@id/glRight"-->
+<!--            app:layout_constraintStart_toEndOf="@id/ivProfileFriends"-->
+<!--            app:layout_constraintTop_toTopOf="@id/ivProfileFriends" />-->
 
-        <ImageView
-            android:id="@+id/profileFriendsArrow"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="@id/profileFriendsTextView"
-            app:layout_constraintEnd_toEndOf="@id/glRight"
-            app:layout_constraintTop_toTopOf="@id/profileFriendsTextView"
-            app:srcCompat="@drawable/ic_neu_chevron_right"
-            tools:ignore="ContentDescription" />
+<!--        <ImageView-->
+<!--            android:id="@+id/profileFriendsArrow"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:layout_constraintBottom_toBottomOf="@id/profileFriendsTextView"-->
+<!--            app:layout_constraintEnd_toEndOf="@id/glRight"-->
+<!--            app:layout_constraintTop_toTopOf="@id/profileFriendsTextView"-->
+<!--            app:srcCompat="@drawable/ic_neu_chevron_right"-->
+<!--            tools:ignore="ContentDescription" />-->
 
-        <View
-            android:id="@+id/vProfileDiv2"
-            android:layout_width="0dp"
-            android:layout_height="1dp"
-            android:background="?attr/dividerColor"
-            app:layout_constraintEnd_toEndOf="@id/glRight"
-            app:layout_constraintStart_toStartOf="@id/glLeft"
-            app:layout_constraintTop_toBottomOf="@id/ivProfileFriends" />
+<!--        <View-->
+<!--            android:id="@+id/vProfileDiv2"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="1dp"-->
+<!--            android:background="?attr/dividerColor"-->
+<!--            app:layout_constraintEnd_toEndOf="@id/glRight"-->
+<!--            app:layout_constraintStart_toStartOf="@id/glLeft"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/ivProfileFriends" />-->
 
         <ImageView
             android:id="@+id/ivProfilePassphrase"
@@ -129,7 +129,7 @@
             android:padding="@dimen/x1"
             android:src="@drawable/ic_neu_lock"
             app:layout_constraintStart_toStartOf="@id/glLeft"
-            app:layout_constraintTop_toBottomOf="@id/vProfileDiv2"
+            app:layout_constraintTop_toBottomOf="@id/vProfileDiv1"
             app:tint="?attr/tintColorLight"
             tools:ignore="ContentDescription" />
 
@@ -297,134 +297,134 @@
             app:layout_constraintStart_toStartOf="@id/glLeft"
             app:layout_constraintTop_toBottomOf="@id/ivProfileLanguage" />
 
-        <ImageView
-            android:id="@+id/ivProfileFaq"
-            android:layout_width="@dimen/profile_icon"
-            android:layout_height="@dimen/profile_icon"
-            android:padding="@dimen/x1"
-            android:src="@drawable/ic_neu_question"
-            app:layout_constraintStart_toStartOf="@id/glLeft"
-            app:layout_constraintTop_toBottomOf="@id/vProfileDiv6"
-            app:tint="?attr/tintColorLight"
-            tools:ignore="ContentDescription" />
+<!--        <ImageView-->
+<!--            android:id="@+id/ivProfileFaq"-->
+<!--            android:layout_width="@dimen/profile_icon"-->
+<!--            android:layout_height="@dimen/profile_icon"-->
+<!--            android:padding="@dimen/x1"-->
+<!--            android:src="@drawable/ic_neu_question"-->
+<!--            app:layout_constraintStart_toStartOf="@id/glLeft"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/vProfileDiv6"-->
+<!--            app:tint="?attr/tintColorLight"-->
+<!--            tools:ignore="ContentDescription" />-->
 
-        <TextView
-            android:id="@+id/profileFaqTextView"
-            style="@style/TextAppearance.Soramitsu.Neu.18.Regular"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:background="?selectableItemBackground"
-            android:padding="@dimen/x1"
-            android:text="@string/faq_title"
-            app:layout_constraintBottom_toBottomOf="@id/ivProfileFaq"
-            app:layout_constraintEnd_toEndOf="@id/glRight"
-            app:layout_constraintStart_toEndOf="@id/ivProfileFaq"
-            app:layout_constraintTop_toTopOf="@id/ivProfileFaq" />
+<!--        <TextView-->
+<!--            android:id="@+id/profileFaqTextView"-->
+<!--            style="@style/TextAppearance.Soramitsu.Neu.18.Regular"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="?selectableItemBackground"-->
+<!--            android:padding="@dimen/x1"-->
+<!--            android:text="@string/faq_title"-->
+<!--            app:layout_constraintBottom_toBottomOf="@id/ivProfileFaq"-->
+<!--            app:layout_constraintEnd_toEndOf="@id/glRight"-->
+<!--            app:layout_constraintStart_toEndOf="@id/ivProfileFaq"-->
+<!--            app:layout_constraintTop_toTopOf="@id/ivProfileFaq" />-->
 
-        <ImageView
-            android:id="@+id/profileFaqArrow"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_neu_chevron_right"
-            app:layout_constraintBottom_toBottomOf="@id/profileFaqTextView"
-            app:layout_constraintEnd_toEndOf="@id/glRight"
-            app:layout_constraintTop_toTopOf="@id/profileFaqTextView"
-            tools:ignore="ContentDescription" />
+<!--        <ImageView-->
+<!--            android:id="@+id/profileFaqArrow"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/ic_neu_chevron_right"-->
+<!--            app:layout_constraintBottom_toBottomOf="@id/profileFaqTextView"-->
+<!--            app:layout_constraintEnd_toEndOf="@id/glRight"-->
+<!--            app:layout_constraintTop_toTopOf="@id/profileFaqTextView"-->
+<!--            tools:ignore="ContentDescription" />-->
 
-        <View
-            android:id="@+id/vProfileDiv7"
-            android:layout_width="0dp"
-            android:layout_height="1dp"
-            android:background="?attr/dividerColor"
-            app:layout_constraintEnd_toEndOf="@id/glRight"
-            app:layout_constraintStart_toStartOf="@id/glLeft"
-            app:layout_constraintTop_toBottomOf="@id/ivProfileFaq" />
+<!--        <View-->
+<!--            android:id="@+id/vProfileDiv7"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="1dp"-->
+<!--            android:background="?attr/dividerColor"-->
+<!--            app:layout_constraintEnd_toEndOf="@id/glRight"-->
+<!--            app:layout_constraintStart_toStartOf="@id/glLeft"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/ivProfileFaq" />-->
 
-        <ImageView
-            android:id="@+id/ivProfileAbout"
-            android:layout_width="@dimen/profile_icon"
-            android:layout_height="@dimen/profile_icon"
-            android:padding="@dimen/x1"
-            android:src="@drawable/ic_neu_exclamation"
-            app:layout_constraintStart_toStartOf="@id/glLeft"
-            app:layout_constraintTop_toBottomOf="@id/vProfileDiv7"
-            app:tint="?attr/tintColorLight"
-            tools:ignore="ContentDescription" />
+<!--        <ImageView-->
+<!--            android:id="@+id/ivProfileAbout"-->
+<!--            android:layout_width="@dimen/profile_icon"-->
+<!--            android:layout_height="@dimen/profile_icon"-->
+<!--            android:padding="@dimen/x1"-->
+<!--            android:src="@drawable/ic_neu_exclamation"-->
+<!--            app:layout_constraintStart_toStartOf="@id/glLeft"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/vProfileDiv7"-->
+<!--            app:tint="?attr/tintColorLight"-->
+<!--            tools:ignore="ContentDescription" />-->
 
-        <TextView
-            android:id="@+id/profileAboutTextView"
-            style="@style/TextAppearance.Soramitsu.Neu.18.Regular"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:background="?selectableItemBackground"
-            android:padding="@dimen/x1"
-            android:text="@string/profile_about_title"
-            app:layout_constraintBottom_toBottomOf="@id/ivProfileAbout"
-            app:layout_constraintEnd_toEndOf="@id/glRight"
-            app:layout_constraintStart_toEndOf="@id/ivProfileAbout"
-            app:layout_constraintTop_toTopOf="@id/ivProfileAbout" />
+<!--        <TextView-->
+<!--            android:id="@+id/profileAboutTextView"-->
+<!--            style="@style/TextAppearance.Soramitsu.Neu.18.Regular"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="?selectableItemBackground"-->
+<!--            android:padding="@dimen/x1"-->
+<!--            android:text="@string/profile_about_title"-->
+<!--            app:layout_constraintBottom_toBottomOf="@id/ivProfileAbout"-->
+<!--            app:layout_constraintEnd_toEndOf="@id/glRight"-->
+<!--            app:layout_constraintStart_toEndOf="@id/ivProfileAbout"-->
+<!--            app:layout_constraintTop_toTopOf="@id/ivProfileAbout" />-->
 
-        <ImageView
-            android:id="@+id/profileAboutArrow"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_neu_chevron_right"
-            app:layout_constraintBottom_toBottomOf="@id/profileAboutTextView"
-            app:layout_constraintEnd_toEndOf="@id/glRight"
-            app:layout_constraintTop_toTopOf="@id/profileAboutTextView"
-            tools:ignore="ContentDescription" />
+<!--        <ImageView-->
+<!--            android:id="@+id/profileAboutArrow"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/ic_neu_chevron_right"-->
+<!--            app:layout_constraintBottom_toBottomOf="@id/profileAboutTextView"-->
+<!--            app:layout_constraintEnd_toEndOf="@id/glRight"-->
+<!--            app:layout_constraintTop_toTopOf="@id/profileAboutTextView"-->
+<!--            tools:ignore="ContentDescription" />-->
 
-        <View
-            android:id="@+id/vProfileDiv8"
-            android:layout_width="0dp"
-            android:layout_height="1dp"
-            android:background="?attr/dividerColor"
-            app:layout_constraintEnd_toEndOf="@id/glRight"
-            app:layout_constraintStart_toStartOf="@id/glLeft"
-            app:layout_constraintTop_toBottomOf="@id/ivProfileAbout" />
+<!--        <View-->
+<!--            android:id="@+id/vProfileDiv8"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="1dp"-->
+<!--            android:background="?attr/dividerColor"-->
+<!--            app:layout_constraintEnd_toEndOf="@id/glRight"-->
+<!--            app:layout_constraintStart_toStartOf="@id/glLeft"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/ivProfileAbout" />-->
 
-        <ImageView
-            android:id="@+id/ivProfileDisclaimer"
-            android:layout_width="@dimen/profile_icon"
-            android:layout_height="@dimen/profile_icon"
-            android:padding="@dimen/x1"
-            android:src="@drawable/ic_polkaswap"
-            app:layout_constraintStart_toStartOf="@id/glLeft"
-            app:layout_constraintTop_toBottomOf="@id/vProfileDiv8"
-            app:tint="?attr/tintColorLight"
-            tools:ignore="ContentDescription" />
+<!--        <ImageView-->
+<!--            android:id="@+id/ivProfileDisclaimer"-->
+<!--            android:layout_width="@dimen/profile_icon"-->
+<!--            android:layout_height="@dimen/profile_icon"-->
+<!--            android:padding="@dimen/x1"-->
+<!--            android:src="@drawable/ic_polkaswap"-->
+<!--            app:layout_constraintStart_toStartOf="@id/glLeft"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/vProfileDiv8"-->
+<!--            app:tint="?attr/tintColorLight"-->
+<!--            tools:ignore="ContentDescription" />-->
 
-        <TextView
-            android:id="@+id/profileDisclaimerTextView"
-            style="@style/TextAppearance.Soramitsu.Neu.18.Regular"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:background="?selectableItemBackground"
-            android:padding="@dimen/x1"
-            android:text="@string/polkaswap_info_title"
-            app:layout_constraintBottom_toBottomOf="@id/ivProfileDisclaimer"
-            app:layout_constraintEnd_toEndOf="@id/glRight"
-            app:layout_constraintStart_toEndOf="@id/ivProfileDisclaimer"
-            app:layout_constraintTop_toTopOf="@id/ivProfileDisclaimer" />
+<!--        <TextView-->
+<!--            android:id="@+id/profileDisclaimerTextView"-->
+<!--            style="@style/TextAppearance.Soramitsu.Neu.18.Regular"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="?selectableItemBackground"-->
+<!--            android:padding="@dimen/x1"-->
+<!--            android:text="@string/polkaswap_info_title"-->
+<!--            app:layout_constraintBottom_toBottomOf="@id/ivProfileDisclaimer"-->
+<!--            app:layout_constraintEnd_toEndOf="@id/glRight"-->
+<!--            app:layout_constraintStart_toEndOf="@id/ivProfileDisclaimer"-->
+<!--            app:layout_constraintTop_toTopOf="@id/ivProfileDisclaimer" />-->
 
-        <ImageView
-            android:id="@+id/profileDisclaimerArrow"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_neu_chevron_right"
-            app:layout_constraintBottom_toBottomOf="@id/profileDisclaimerTextView"
-            app:layout_constraintEnd_toEndOf="@id/glRight"
-            app:layout_constraintTop_toTopOf="@id/profileDisclaimerTextView"
-            tools:ignore="ContentDescription" />
+<!--        <ImageView-->
+<!--            android:id="@+id/profileDisclaimerArrow"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@drawable/ic_neu_chevron_right"-->
+<!--            app:layout_constraintBottom_toBottomOf="@id/profileDisclaimerTextView"-->
+<!--            app:layout_constraintEnd_toEndOf="@id/glRight"-->
+<!--            app:layout_constraintTop_toTopOf="@id/profileDisclaimerTextView"-->
+<!--            tools:ignore="ContentDescription" />-->
 
-        <View
-            android:id="@+id/vProfileDividerDisclaimer"
-            android:layout_width="0dp"
-            android:layout_height="1dp"
-            android:background="?attr/dividerColor"
-            app:layout_constraintEnd_toEndOf="@id/glRight"
-            app:layout_constraintStart_toStartOf="@id/glLeft"
-            app:layout_constraintTop_toBottomOf="@id/ivProfileDisclaimer" />
+<!--        <View-->
+<!--            android:id="@+id/vProfileDividerDisclaimer"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="1dp"-->
+<!--            android:background="?attr/dividerColor"-->
+<!--            app:layout_constraintEnd_toEndOf="@id/glRight"-->
+<!--            app:layout_constraintStart_toStartOf="@id/glLeft"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/ivProfileDisclaimer" />-->
 
         <ImageView
             android:id="@+id/ivProfileLogout"
@@ -433,7 +433,7 @@
             android:padding="@dimen/x1"
             android:src="@drawable/ic_neu_logout"
             app:layout_constraintStart_toStartOf="@id/glLeft"
-            app:layout_constraintTop_toBottomOf="@id/vProfileDividerDisclaimer"
+            app:layout_constraintTop_toBottomOf="@id/vProfileDiv6"
             app:tint="?attr/tintColorLight"
             tools:ignore="ContentDescription" />
 

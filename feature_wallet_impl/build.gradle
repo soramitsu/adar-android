@@ -41,6 +41,10 @@ android {
             dimension 'default'
         }
 
+        adartestnet {
+            dimension 'default'
+        }
+
         soralution {
             dimension 'default'
         }
