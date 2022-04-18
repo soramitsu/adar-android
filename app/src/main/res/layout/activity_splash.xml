@@ -5,17 +5,30 @@
     android:id="@+id/splashContainer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/neu_color_100">
+    android:background="@color/neu_color_300">
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="168dp"
-        android:layout_height="168dp"
-        android:src="@drawable/ic_adar_text"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_adar_logo"
+        app:layout_constraintBottom_toTopOf="@id/textLogo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/textLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x3"
+        android:src="@drawable/ic_adar_logo_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo"
         tools:ignore="ContentDescription" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
