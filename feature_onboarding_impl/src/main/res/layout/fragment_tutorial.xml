@@ -7,28 +7,28 @@
     android:background="?attr/baseBackground">
 
     <ImageView
-        android:id="@+id/tutorialLogoTop"
-        android:layout_width="168dp"
-        android:layout_height="168dp"
-        android:src="@drawable/ic_adar_text"
-        app:layout_constraintBottom_toTopOf="@id/tutorialOneWorldTextSora"
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_adar_logo"
+        app:layout_constraintBottom_toTopOf="@id/textLogo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
         tools:ignore="ContentDescription" />
 
-    <TextView
-        android:id="@+id/tutorialOneWorldTextSora"
-        style="@style/TextAppearance.Soramitsu.Neu.Bold.34"
+    <ImageView
+        android:id="@+id/textLogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/x7"
-        android:text="Advanced Digital Asset Routing"
-        android:textColor="?attr/selectedPrimaryColor"
-        android:gravity="center"
+        android:layout_marginTop="@dimen/x3"
+        android:src="@drawable/ic_adar_logo_text"
         app:layout_constraintBottom_toTopOf="@id/tutorialSignUpButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        tools:ignore="ContentDescription" />
 
     <Button
         android:id="@+id/tutorialSignUpButton"
