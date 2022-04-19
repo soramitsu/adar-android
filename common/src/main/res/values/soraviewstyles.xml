@@ -13,7 +13,7 @@
     <style name="Widget.Soramitsu.SelectTokenCardView" parent="android:Widget">
         <item name="cardBackground">@drawable/background_select_token_40</item>
         <item name="cardBackgroundColorTintSelected">?attr/flatAboveBackground</item>
-        <item name="cardBackgroundColorTintNotSelected">?attr/polkaswapMainColor</item>
+        <item name="cardBackgroundColorTintNotSelected">?attr/exchangeMainColor</item>
         <item name="cardOpenIcon">@drawable/ic_neu_chevron_down_fill</item>
         <item name="cardCloseIcon">@drawable/ic_neu_chevron_down_fill</item>
         <item name="cardIconTintSelected">?attr/iconTintAboveBackground</item>

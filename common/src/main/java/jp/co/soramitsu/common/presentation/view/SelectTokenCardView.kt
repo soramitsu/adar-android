@@ -52,7 +52,7 @@ class SelectTokenCardView @JvmOverloads constructor(
             )
             val notSelectedBackgroundTintColorRes = it.getResourceId(
                 R.styleable.SelectTokenCardView_cardBackgroundColorTintNotSelected,
-                R.attr.polkaswapMainColor
+                R.attr.exchangeMainColor
             )
             selectedBackgroundTintColor =
                 ContextCompat.getColor(context, selectedBackgroundTintColorRes)

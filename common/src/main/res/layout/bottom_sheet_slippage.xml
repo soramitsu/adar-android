@@ -129,7 +129,7 @@
         android:gravity="center"
         android:letterSpacing="-0.04"
         android:text="0.1%"
-        android:textColor="?attr/polkaswapPrimary"
+        android:textColor="?attr/exchangePrimary"
         app:layout_constraintEnd_toStartOf="@+id/secondChip"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/view2" />
@@ -143,7 +143,7 @@
         android:gravity="center"
         android:letterSpacing="-0.04"
         android:text="1.0%"
-        android:textColor="?attr/polkaswapPrimary"
+        android:textColor="?attr/exchangePrimary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/secondChip"
         app:layout_constraintTop_toTopOf="@id/firstChip" />
@@ -157,7 +157,7 @@
         android:gravity="center"
         android:letterSpacing="-0.04"
         android:text="0.5%"
-        android:textColor="?attr/polkaswapPrimary"
+        android:textColor="?attr/exchangePrimary"
         app:layout_constraintEnd_toStartOf="@id/lastChip"
         app:layout_constraintStart_toEndOf="@id/firstChip"
         app:layout_constraintTop_toTopOf="@id/firstChip" />

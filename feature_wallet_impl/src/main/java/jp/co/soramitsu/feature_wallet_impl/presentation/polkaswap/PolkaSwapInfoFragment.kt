@@ -36,7 +36,7 @@ class PolkaSwapInfoFragment : BaseFragment<PolkaSwapViewModel>(R.layout.fragment
         super.onViewCreated(view, savedInstanceState)
         (activity as BottomBarController).hideBottomBar()
 
-        val color = requireContext().attrColor(R.attr.polkaswapPrimary)
+        val color = requireContext().attrColor(R.attr.exchangePrimary)
         val text = getString(R.string.polkaswap_info_text_1).highlightWords(
             listOf(
                 color,

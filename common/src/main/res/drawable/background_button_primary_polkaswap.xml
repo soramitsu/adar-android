@@ -3,6 +3,6 @@
 
     <item android:alpha="1" android:color="?attr/disabledButtonColor" android:state_enabled="false" />
     <item android:alpha="1" android:color="?attr/buttonPrimaryDark" android:state_pressed="true" />
-    <item android:alpha="1" android:color="@color/neu_brand_polkaswap" />
+    <item android:alpha="1" android:color="@color/neu_brand_exchange" />
 
 </selector>

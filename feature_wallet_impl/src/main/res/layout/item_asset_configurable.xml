@@ -55,7 +55,7 @@
 
     <com.google.android.material.switchmaterial.SwitchMaterial
         android:id="@+id/swAssetManagementItem"
-        style="@style/Widget.Soramitsu.Switch.Red"
+        style="@style/Widget.Soramitsu.Switch.Brown"
         android:layout_width="wrap_content"
         android:layout_height="24dp"
         android:layout_marginEnd="@dimen/x1"
