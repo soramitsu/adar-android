@@ -80,7 +80,7 @@
         android:includeFontPadding="false"
         android:text="@string/polkaswap_smart"
         android:textAllCaps="true"
-        android:textColor="@color/neu_brand_polkaswap"
+        android:textColor="@color/neu_brand_exchange"
         app:layout_constraintBottom_toBottomOf="@id/settingsButton"
         app:layout_constraintEnd_toStartOf="@+id/settingsButton"
         app:layout_constraintTop_toBottomOf="@+id/marketTitleText" />
@@ -102,7 +102,7 @@
         app:layout_constraintTop_toBottomOf="@id/llPolkaswapTitle"
         app:tabBackground="@drawable/tab_background_swap"
         app:tabIndicator="@android:color/transparent"
-        app:tabSelectedTextColor="@color/neu_brand_polkaswap"
+        app:tabSelectedTextColor="@color/neu_brand_exchange"
         app:tabTextAppearance="@style/TextAppearance.Soramitsu.Neu.18.Regular"
         app:tabTextColor="?attr/disabledColor" />
 

@@ -8,7 +8,7 @@
             <item android:gravity="bottom">
                 <shape android:shape="rectangle">
                     <size android:height="1dp" />
-                    <solid android:color="@color/neu_brand_polkaswap" />
+                    <solid android:color="@color/neu_brand_exchange" />
                 </shape>
             </item>
         </layer-list>

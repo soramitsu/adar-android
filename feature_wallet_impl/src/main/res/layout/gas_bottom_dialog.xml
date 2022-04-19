@@ -92,7 +92,7 @@
         android:textColor="@color/informationTextColor"
         android:thumb="@drawable/ic_switch_thumb"
         android:visibility="gone"
-        android:track="@drawable/red_switch_track_selector" />
+        android:track="@drawable/orange_switch_track_selector" />
 
     <TextView
         android:id="@+id/gasPriceTitle"

@@ -78,6 +78,7 @@
 
     <!--  brand colors. in progress....  -->
     <color name="brand_soramitsu_red">#e3232c</color>
+    <color name="brand_soramitsu_brown">#887777</color>
     <color name="brand_pmsblack">#2d2926</color>
     <color name="brand_ultrablack">#0d0248</color>
     <color name="brand_white">#ffffff</color>
@@ -103,12 +104,12 @@
     <color name="neu_color_grey_100">#e0d6d6</color>
     <color name="neu_color_grey_200">#776666</color>
     <color name="neu_color_grey_300">#eee7e7</color>
-    <color name="neu_selected_primary">#ee2233</color>
+    <color name="neu_selected_primary">#ff6622</color>
     <color name="neu_shadow_dark_on_day">#eeeae6e6</color>
     <color name="neu_shadow_light_on_day">#eefefafa</color>
     <color name="neu_tint_titles_dark">#000055</color>
     <color name="neu_tint_titles_light">#000055</color>
-    <color name="neu_brand_polkaswap">#ff0066</color>
+    <color name="neu_brand_exchange">#ff6622</color>
     <color name="neu_disabled_on_day">#665555</color>
     <color name="neu_disabled_on_night">#665555</color>
     <color name="neu_violet_100">#5d2f73</color>
@@ -120,7 +121,8 @@
     <color name="neu_disabled_text_grey">#DCD2D2</color>
     <color name="neu_disabled_text_grey_2">#cdc0c0</color>
     <color name="neu_pressed_red">#cc0000</color>
-    <color name="neu_pressed_polkaswap">#DD0066</color>
+    <color name="neu_pressed_brown">#665555</color>
+    <color name="neu_pressed_exchange">#DD4400</color>
     <color name="neu_brown_color">#887777</color>
     <color name="neu_bottom_menu_inactive">#443333</color>
     <color name="neu_background_search_view">#f0ecec</color>

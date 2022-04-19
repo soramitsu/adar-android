@@ -21,8 +21,8 @@
 
     <attr name="buttonPrimary" format="color" />$
     <attr name="buttonPrimaryDark" format="color" />
-    <attr name="polkaswapPrimary" format="color" />
-    <attr name="polkaswapPrimaryDark" format="color" />
+    <attr name="exchangePrimary" format="color" />
+    <attr name="exchangePrimaryDark" format="color" />
     <attr name="disabledButtonColor" format="color" />
     <attr name="disabledButtonTextColor" format="color" />
     <attr name="disabledButtonTextColor2" format="color" />
@@ -41,7 +41,7 @@
     <attr name="secondaryPressed" format="color" />
     <attr name="secondaryFocused" format="color" />
 
-    <attr name="polkaswapMainColor" format="color" />
+    <attr name="exchangeMainColor" format="color" />
     <attr name="dividerColor" format="color" />
     <attr name="balanceColorDefault" format="color" />
     <attr name="balanceColorPositive" format="color" />
