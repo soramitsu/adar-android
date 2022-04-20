@@ -43,13 +43,20 @@ class DotsProgressView @JvmOverloads constructor(
         for (i in 0 until MAX_PROGRESS) {
             val circle = View(context)
             val params = LayoutParams(itemWidth, itemHeight)
-            params.setMargins(0, itemMargin, 0, 0)
+
+            when (orientation) {
+                VERTICAL -> params.setMargins(0, itemMargin, 0, 0)
+                HORIZONTAL -> params.setMargins(0, 0, itemMargin, 0)
+            }
+
             circle.layoutParams = params
             addView(circle)
             circles[i] = circle
         }
 
-        circles.reverse()
+        if (orientation == VERTICAL) {
+            circles.reverse()
+        }
 
         setProgress(0)
     }
