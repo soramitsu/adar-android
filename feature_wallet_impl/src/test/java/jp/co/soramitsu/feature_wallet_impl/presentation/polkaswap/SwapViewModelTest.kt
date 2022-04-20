@@ -162,12 +162,13 @@ class SwapViewModelTest {
         }
     }
 
-    @Test
-    fun infoClicked() {
-        viewModel.infoClicked()
-
-        verify(walletRouter).showPolkaswapInfoFragment()
-    }
+//    Disclaimer logic, will be added later
+//    @Test
+//    fun infoClicked() {
+//        viewModel.infoClicked()
+//
+//        verify(walletRouter).showPolkaswapInfoFragment()
+//    }
 
     @Test
     fun detailsClicked() {

@@ -81,7 +81,9 @@ class SwapFragment : BaseFragment<SwapViewModel>(R.layout.fragment_swap) {
 
     private lateinit var keyboardHelper: KeyboardHelper
     private var swapButtonText = ""
-    private var disclaimerVisibility: Boolean = false
+
+//    Disclaimer logic, will be added later
+//    private var disclaimerVisibility: Boolean = false
 
     private val assetBalanceStyle = AssetBalanceStyle(
         R.style.TextAppearance_Soramitsu_Neu_Regular_14,
@@ -143,10 +145,10 @@ class SwapFragment : BaseFragment<SwapViewModel>(R.layout.fragment_swap) {
                 .setPositiveButton(android.R.string.ok) { _, _ -> }
                 .show()
         }
-
-        binding.infoButtonWrapper.setDebouncedClickListener(debounceClickHandler) {
-            viewModel.infoClicked()
-        }
+//        Disclaimer logic, will be added later
+//        binding.infoButtonWrapper.setDebouncedClickListener(debounceClickHandler) {
+//            viewModel.infoClicked()
+//        }
 
         binding.doneButton.setOnClickListener {
             hideSoftKeyboard()
@@ -243,10 +245,11 @@ class SwapFragment : BaseFragment<SwapViewModel>(R.layout.fragment_swap) {
     }
 
     private fun initListeners() {
-        viewModel.disclaimerVisibilityLiveData.observe {
-            disclaimerVisibility = it
-            binding.infoButtonWrapper.showOrGone(disclaimerVisibility)
-        }
+//        Disclaimer logic, will be added later
+//        viewModel.disclaimerVisibilityLiveData.observe {
+//            disclaimerVisibility = it
+//            binding.infoButtonWrapper.showOrGone(disclaimerVisibility)
+//        }
 
         viewModel.detailsPriceValue.observe { pair ->
             pair.first?.let { first ->
@@ -454,18 +457,21 @@ class SwapFragment : BaseFragment<SwapViewModel>(R.layout.fragment_swap) {
                             binding.amountPercentage.gone()
                         }
                     }
-                    if (disclaimerVisibility) {
-                        binding.infoButtonWrapper.gone()
-                    }
+//                    Disclaimer logic, will be added later
+//                    if (disclaimerVisibility) {
+//                        binding.infoButtonWrapper.gone()
+//                    }
                 }
 
                 override fun onKeyboardHide() {
                     runDelayed(100) {
                         (activity as BottomBarController).showBottomBar()
                         binding.amountPercentage.gone()
-                        if (disclaimerVisibility) {
-                            binding.infoButtonWrapper.show()
-                        }
+
+//                        Disclaimer logic, will be added later
+//                        if (disclaimerVisibility) {
+//                            binding.infoButtonWrapper.show()
+//                        }
                     }
                 }
             }
