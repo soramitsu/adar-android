@@ -12,7 +12,7 @@
     <item
         android:id="@+id/polkaswap_nav_graph"
         android:enabled="true"
-        android:icon="@drawable/ic_polkaswap_black_24"
+        android:icon="@drawable/ic_exchange"
         android:title="@string/tabbar_polkaswap_title"
         app:showAsAction="ifRoom" />
 
