@@ -529,58 +529,6 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>
 
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/infoButtonWrapper"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal|bottom"
-        android:layout_marginStart="@dimen/x1_5"
-        android:layout_marginEnd="@dimen/x1_5"
-        android:layout_marginBottom="@dimen/x2"
-        android:foreground="?selectableItemBackground"
-        android:visibility="gone"
-        app:cardBackgroundColor="?attr/backgroundInfo"
-        app:cardCornerRadius="28dp"
-        app:cardElevation="0dp"
-        app:contentPadding="@dimen/x1"
-        app:strokeColor="?attr/disabledColor"
-        app:strokeWidth="1dp"
-        tools:visibility="visible">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <ImageView
-                android:id="@+id/exclamationIcon"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:background="@drawable/background_circle"
-                android:backgroundTint="?attr/statusColor"
-                android:padding="@dimen/x1"
-                android:src="@drawable/ic_neu_exclamation"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:ignore="ContentDescription" />
-
-            <TextView
-                style="@style/TextAppearance.Soramitsu.Neu.14.Light"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_marginStart="@dimen/x1"
-                android:gravity="center"
-                android:maxLines="2"
-                android:singleLine="false"
-                android:text="@string/polkaswap_info_title_main"
-                android:textAllCaps="true"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@id/exclamationIcon"
-                app:layout_constraintTop_toTopOf="parent" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-    </com.google.android.material.card.MaterialCardView>
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/amountPercentage"
         android:layout_width="match_parent"

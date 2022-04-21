@@ -120,8 +120,9 @@ class SwapViewModel(
     private val _preloaderEventLiveData = SingleLiveEvent<Boolean>()
     val preloaderEventLiveData: LiveData<Boolean> = _preloaderEventLiveData
 
-    private val _disclaimerVisibilityLiveData = MutableLiveData<Boolean>()
-    val disclaimerVisibilityLiveData: LiveData<Boolean> = _disclaimerVisibilityLiveData
+//    Disclaimer logic, will be added later
+//    private val _disclaimerVisibilityLiveData = MutableLiveData<Boolean>()
+//    val disclaimerVisibilityLiveData: LiveData<Boolean> = _disclaimerVisibilityLiveData
 
     private val _dataInitiatedEvent = SingleLiveEvent<Unit>()
     val dataInitiatedEvent = _dataInitiatedEvent
@@ -141,14 +142,17 @@ class SwapViewModel(
         _preloaderEventLiveData.value = false
         _slippageToleranceLiveData.value = 0.5f
         _swapButtonTitleLiveData.value = resourceManager.getString(R.string.choose_tokens)
-        polkaswapInteractor.getPolkaswapDisclaimerVisibility()
-            .catch {
-                onError(it)
-            }
-            .onEach {
-                _disclaimerVisibilityLiveData.value = it
-            }
-            .launchIn(viewModelScope)
+
+//        Disclaimer logic, will be added later
+//        polkaswapInteractor.getPolkaswapDisclaimerVisibility()
+//            .catch {
+//                onError(it)
+//            }
+//            .onEach {
+//                _disclaimerVisibilityLiveData.value = it
+//            }
+//            .launchIn(viewModelScope)
+
         viewModelScope.launch {
             polkaswapInteractor.observeSelectedMarket()
                 .catch {
@@ -572,9 +576,10 @@ class SwapViewModel(
         }
     }
 
-    fun infoClicked() {
-        router.showPolkaswapInfoFragment()
-    }
+//    Disclaimer logic, will be added later
+//    fun infoClicked() {
+//        router.showPolkaswapInfoFragment()
+//    }
 
     fun onMinMaxClicked() {
         _minmaxClickLiveData.value =
