@@ -190,7 +190,7 @@
 
             <Button
                 android:id="@+id/nextBtn"
-                style="@style/Widget.Soramitsu.Button.Primary.Neu.56.Polkaswap"
+                style="@style/Widget.Soramitsu.Button.Primary.Neu.56"
                 android:layout_width="0dp"
                 android:layout_marginStart="@dimen/x2"
                 android:layout_marginTop="@dimen/x2"

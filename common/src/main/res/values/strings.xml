@@ -504,4 +504,5 @@
   <string name="wallet_val_to_my_eth">VAL to My Ethereum account</string>
   <string name="wallet_transactions_unavailable_title" translatable="false">Couldn’t load transactions</string>
   <string name="wallet_transactions_unavailable_description" translatable="false">The issue is getting dealt with,\n please try again later.</string>
+  <string name="tabbar_exchange_title">Exchange</string>
 </resources>

@@ -227,10 +227,6 @@
         <item name="android:textColor">@drawable/sora_button_primary_neu_text_selector</item>
     </style>
 
-    <style name="Widget.Soramitsu.Button.Primary.Neu.56.Polkaswap">
-        <item name="backgroundTint">@drawable/background_button_primary_polkaswap</item>
-    </style>
-
     <style name="Widget.Soramitsu.Button.Secondary.Neu.56" parent="Widget.Soramitsu.Button.Primary.Neu.56">
         <item name="backgroundTint">@drawable/sora_button_secondary_neu_bg_selector</item>
     </style>

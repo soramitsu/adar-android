@@ -520,4 +520,5 @@
   <string name="wallet_transfer_to_ethereum">На Ethereum адрес</string>
   <string name="wallet_unbonding">Освобождаются</string>
   <string name="wallet_val_to_my_eth">VAL на мой счет Ethereum</string>
+  <string name="tabbar_exchange_title">Обмен</string>
 </resources>
