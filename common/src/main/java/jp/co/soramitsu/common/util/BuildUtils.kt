@@ -16,5 +16,6 @@ enum class Flavor(val flavorName: String) {
     DEVELOP("develop"),
     TESTING("testing"),
     PROD("production"),
-    SORALUTION("soralution")
+    SORALUTION("soralution"),
+    ADAR_TESTNET("adartestnet")
 }
