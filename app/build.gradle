@@ -96,7 +96,7 @@ android {
             applicationIdSuffix ".testnet"
             resValue "string", "app_name", "ADAR testnet"
             dimension 'default'
-            manifestPlaceholders.pathPrefix = "/dev/join"
+            manifestPlaceholders.pathPrefix = "/tst/join"
             manifestPlaceholders.appIcon = "@mipmap/ic_adar_launcher"
             manifestPlaceholders.roundedIcon = "@mipmap/ic_adar_launcher_round"
         }

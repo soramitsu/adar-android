@@ -99,7 +99,7 @@ class SubstrateApiImpl @Inject constructor(
     }
 
     private suspend fun genesisBytes(): ByteArray =
-        if (BuildUtils.isFlavors(Flavor.DEVELOP, Flavor.TESTING, Flavor.SORALUTION)) {
+        if (BuildUtils.isFlavors(Flavor.DEVELOP, Flavor.TESTING, Flavor.SORALUTION, Flavor.ADAR_TESTNET)) {
             val result = socketService.executeAsync(
                 request = BlockHashRequest(0),
                 mapper = pojo<String>().nonNull(),
