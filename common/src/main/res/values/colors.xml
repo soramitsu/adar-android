@@ -104,12 +104,12 @@
     <color name="neu_color_grey_100">#e0d6d6</color>
     <color name="neu_color_grey_200">#776666</color>
     <color name="neu_color_grey_300">#eee7e7</color>
-    <color name="neu_selected_primary">#ff6622</color>
+    <color name="neu_selected_primary">#E81932</color>
     <color name="neu_shadow_dark_on_day">#eeeae6e6</color>
     <color name="neu_shadow_light_on_day">#eefefafa</color>
     <color name="neu_tint_titles_dark">#000055</color>
     <color name="neu_tint_titles_light">#000055</color>
-    <color name="neu_brand_exchange">#ff6622</color>
+    <color name="neu_brand_exchange">#E81932</color>
     <color name="neu_disabled_on_day">#665555</color>
     <color name="neu_disabled_on_night">#665555</color>
     <color name="neu_violet_100">#5d2f73</color>
