@@ -60,7 +60,7 @@ android {
 
         adartestnet {
             buildConfigField "String", "DEFAULT_MARKET_URL", "\"https://sora-xor.github.io/sora-join-page/stage/\""
-            buildConfigField "String", "WS_HOST_URL", "\"wss://ws.stage.sora2.soramitsu.co.jp/\""
+            buildConfigField "String", "WS_HOST_URL", "\"wss://ws.framenode-2.s1.stg1.sora2.soramitsu.co.jp/\""
             buildConfigField "String", "SORA_SCAN_HOST_URL", "\"api.subquery.network/sq/sora-xor/sora-staging/\""
             buildConfigField "String", "GENESIS_HASH", "\"cc145a1f96972181accc1785b062ab8c2773ae7c02846ad26d35af9a27571242\""
             buildConfigField "String", "TYPES_FILE_PATH", "\"stage\""
@@ -69,7 +69,7 @@ android {
 
         soralution {
             buildConfigField "String", "DEFAULT_MARKET_URL", "\"https://sora-xor.github.io/sora-join-page/stage/\""
-            buildConfigField "String", "WS_HOST_URL", "\"wss://ws.stage.sora2.soramitsu.co.jp/\""
+            buildConfigField "String", "WS_HOST_URL", "\"wss://ws.framenode-2.s1.stg1.sora2.soramitsu.co.jp/\""
             buildConfigField "String", "SORA_SCAN_HOST_URL", "\"api.subquery.network/sq/sora-xor/sora-staging/\""
             buildConfigField "String", "GENESIS_HASH", "\"cc145a1f96972181accc1785b062ab8c2773ae7c02846ad26d35af9a27571242\""
             buildConfigField "String", "TYPES_FILE_PATH", "\"stage\""
